@@ -14,7 +14,7 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
 * redis
 * rvm
 
-## Steps (on Ubuntu Digital Ocean Droplet)
+## Steps (on an Ubuntu 12.04 x32 Digital Ocean Droplet)
 
 1. ssh onto the newly created machine as root
 2. apt-get -y update && sudo apt-get install gcc
