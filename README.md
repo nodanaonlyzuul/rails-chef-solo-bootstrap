@@ -21,7 +21,6 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
 3. Install the bare-minimum ruby and chef...if you want to use rbenv or rvm, do it later.
 
     #!/usr/bin/env bash
-    apt-get -y update
     apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-gplv2-dev libyaml-dev
     cd /tmp
     wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p125.tar.gz
@@ -32,5 +31,5 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
     make install
     gem install chef ruby-shadow --no-ri --no-rdoc
 4. Change the password in node.json
-5. rsync -azv . root@xxx.xxx.xxx.x:/var/chef/
+5. On local directory that has this repo in it..`rsync -azv . root@xxx.xxx.xxx.x:/var/chef/`
 6. From the new machine run `chef-solo -c /var/chef/solo.rb`
