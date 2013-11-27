@@ -1,3 +1,7 @@
 {
+  "user": {
+    "name": "deploy",
+    "password": "YOUSHOULDCHANGETHIS"
+  },
   "run_list":["recipe[main]"]
 }
