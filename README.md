@@ -32,6 +32,4 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
     make install
     gem install chef ruby-shadow --no-ri --no-rdoc
 
-4. Create a file in `/var/chef/solo.rb` with the contents
-
-    cookbook_path File.expand_path("../cookbooks", __FILE__)
+4. TODO: Instructions to scp this directory to /var/chef
