@@ -20,7 +20,6 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
 2. apt-get -y update && sudo apt-get install gcc
 3. Install the bare-minimum ruby and chef...if you want to use rbenv or rvm, do it later.
 
-    #!/usr/bin/env bash
     apt-get -y update
     apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-gplv2-dev libyaml-dev
     cd /tmp
