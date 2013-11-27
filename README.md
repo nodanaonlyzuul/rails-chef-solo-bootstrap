@@ -32,5 +32,5 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
     make install
     gem install chef ruby-shadow --no-ri --no-rdoc
 4. Change the password in node.json
-5. scp -r . root@xxx.xxx.xxx.x:/var/chef/
+5. rsync -azv . root@xxx.xxx.xxx.x:/var/chef/
 6. From the new machine run `chef-solo -c /var/chef/solo.rb`
