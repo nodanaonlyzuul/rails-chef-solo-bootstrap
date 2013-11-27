@@ -8,8 +8,8 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
 
 ## I'd like this to install
 
-* nginx
 * imagemagick
+* nginx
 * mysql
 * redis
 * rvm
@@ -32,4 +32,5 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
     make install
     gem install chef ruby-shadow --no-ri --no-rdoc
 4. Change the password in node.json
-5. TODO: Instructions to scp this directory to /var/chef
+5. scp -r . root@xxx.xxx.xxx.x:/var/chef/
+6. From the new machine run `chef-solo -c /var/chef/solo.rb`
