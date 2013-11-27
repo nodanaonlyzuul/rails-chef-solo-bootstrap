@@ -31,5 +31,5 @@ Playing around with chef-solo to bootstrap new machines with rails barebones
     make
     make install
     gem install chef ruby-shadow --no-ri --no-rdoc
-
-4. TODO: Instructions to scp this directory to /var/chef
+4. Change the password in node.json
+5. TODO: Instructions to scp this directory to /var/chef
